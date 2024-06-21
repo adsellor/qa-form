@@ -1,6 +1,7 @@
 {
   "question_1": {
     "text": "Does your business operate in CA?",
+    "type": "boolean",
     "options": {
       "Yes": {
         "next": "question_2"
@@ -12,17 +13,19 @@
   },
   "question_2": {
     "text": "How many employees do you have?",
+    "type": "freetext",
     "options": {
-      "more_than_100": {
+      "End": {
         "next": "END"
       },
-      "100_or_less": {
+      "Next": {
         "next": "question_3"
       }
     }
   },
   "question_3": {
     "text": "Do you serve food?",
+    "type": "boolean",
     "options": {
       "Yes": {
         "next": "question_4"
@@ -34,34 +37,37 @@
   },
   "question_4": {
     "text": "Do you serve hot food?",
+    "type": "boolean",
     "options": {
       "Yes": {
-        "next": null
+        "next": "question_5"
       },
       "No": {
-        "next": null
+        "next": "question_5"
       }
     }
   },
   "question_5": {
     "text": "Are you open past midnight?",
+    "type": "boolean",
     "options": {
       "Yes": {
-        "next": null
+        "next": "question_6"
       },
       "No": {
-        "next": null
+        "next": "question_6"
       }
     }
   },
   "question_6": {
     "text": "Do you host live music?",
+    "type": "boolean",
     "options": {
       "Yes": {
-        "next": null
+        "next": "END"
       },
       "No": {
-        "next": null
+        "next": "END"
       }
     }
   }
