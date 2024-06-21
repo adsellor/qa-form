@@ -1,0 +1,68 @@
+{
+  "question_1": {
+    "text": "Does your business operate in CA?",
+    "options": {
+      "Yes": {
+        "next": "question_2"
+      },
+      "No": {
+        "next": "END"
+      }
+    }
+  },
+  "question_2": {
+    "text": "How many employees do you have?",
+    "options": {
+      "more_than_100": {
+        "next": "END"
+      },
+      "100_or_less": {
+        "next": "question_3"
+      }
+    }
+  },
+  "question_3": {
+    "text": "Do you serve food?",
+    "options": {
+      "Yes": {
+        "next": "question_4"
+      },
+      "No": {
+        "next": "question_6"
+      }
+    }
+  },
+  "question_4": {
+    "text": "Do you serve hot food?",
+    "options": {
+      "Yes": {
+        "next": null
+      },
+      "No": {
+        "next": null
+      }
+    }
+  },
+  "question_5": {
+    "text": "Are you open past midnight?",
+    "options": {
+      "Yes": {
+        "next": null
+      },
+      "No": {
+        "next": null
+      }
+    }
+  },
+  "question_6": {
+    "text": "Do you host live music?",
+    "options": {
+      "Yes": {
+        "next": null
+      },
+      "No": {
+        "next": null
+      }
+    }
+  }
+}
